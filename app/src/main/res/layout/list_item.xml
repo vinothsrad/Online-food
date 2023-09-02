@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/beef"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/foodImage"/>
+
+        <TextView
+            android:id="@+id/foodId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodName"
+            android:layout_toRightOf="@+id/foodImage"
+            android:layout_marginLeft="20dp"
+            android:text="Food id"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
